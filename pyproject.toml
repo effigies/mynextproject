@@ -7,8 +7,13 @@ authors = [
     { name = "Chris Markiewicz", email = "effigies@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pybids>=0.17.2",
+]
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[project.scripts]
+mnp = "mynextproject.cli:main"
